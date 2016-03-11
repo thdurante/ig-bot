@@ -1,0 +1,9 @@
+<h1><%= @user_info['data']['username'] %> is followed by:</h1>
+
+<h4>Response count: <%= @response.count %> </h4>
+
+<% @response.each do |info| %>
+    <p><b>Username:</b> <%= info['username'] %> || <b>Full_name:</b> <%= info['full_name'] %> || <b>ID:</b> <%= info['id'] %> </p>
+<% end %>
+
+<p><%= @response %></p>
